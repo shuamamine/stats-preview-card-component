@@ -45,7 +45,7 @@ opacity: 0.75;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 60px;
+    padding: 75px;
     gap: 50px;
 }
 .textbox h2{
@@ -77,11 +77,33 @@ text-transform: uppercase;
 font-weight: 400;
 }
 @media screen and (max-width: 500px) {
+    body{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
     .container{
         display: flex;
         flex-direction: column-reverse;
     }
     .image, .textbox{
         width: 100%;
+    }
+    .image img{
+        border-radius: 20px 20px 0 0;
+    }
+    .textbox{
+        text-align: center;
+    }
+    .stats{
+        flex-direction: column;
+        gap: 30px;
+       align-items: center;
+       padding-right: 0;
+    }
+    .a, .b, .c{
+      text-align: center;
+    }
+    .stats p{
+        text-align: center;
     }
 }
